@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;                                /*animation scroll*/
+}
+
+body{                                                       /*commande qui s'applique sur toute la page*/
+    background-color: white;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;                     /*changement de police de texte*/
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+    list-style:none !important;
+    color:#FFF;
+    padding:10px;
+    font-size:20px;
+    text-decoration:none;
+}
+     
+nav ul {
+    background-color:#131313;
+    padding:0;
+    margin:0;
+}
+     
+nav ul li {
+    list-style: none;
+    line-height:44px;
+    float:left;
+    background-color:#131313;
+}
+     
+nav ul li a {
+    color:#FFF;
+    padding:10px;
+    font-size:20px;
+    text-decoration:none;
+}
+     
+li a:hover {
+    border-bottom:3px #FFF solid;
+}
+nav ul li ul { display:none; }                              /* Rend le menu déroulant caché par défaut */
+     
+nav ul li:hover ul {                                        /* Affiche la dropNav au survol de la souris avec la class .drop */
+    z-index:99999;
+    display:list-item !important;
+    position:absolute;
+    margin-top:5px;
+    margin-left:-10px;
+    list-style: none;
+}
+     
+nav ul li:hover ul li {
+    float:none;
+}
+
+.fin {
+    margin-right: 20px;
+    border-bottom-right-radius: 15px 15px;
+}
