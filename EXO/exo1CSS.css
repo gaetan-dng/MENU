@@ -1,0 +1,19 @@
+.bandeau{
+    background-color: #0026ff;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+}
+.contenu{
+    background-color: #fffb00;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.pdp{
+    background-color: #00ff37;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+}

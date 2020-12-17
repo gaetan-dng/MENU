@@ -1,0 +1,396 @@
+html {
+    scroll-behavior: smooth;                                /*animation scroll*/
+}
+
+body{                                                       /*commande qui s'applique sur toute la page*/
+    background-color: #202020;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;                     /*changement de police de texte*/
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.scrolling-box {
+    display: block;
+    text-align: center;
+}
+
+#sidebar {
+    z-index: 5;
+    background-color: #161616;
+    height: auto;
+    width: 100%;
+    max-height: 160px;
+    min-height: 47px;
+}
+
+.sidebar_li{                                                /*appelle de la class sidebar_li*/
+    position: absolute;
+    margin-right: 0px;
+    list-style-type: none;
+}
+
+.align_sidebar_g {
+    float: left;
+    width: 10%;
+    height: calc(2.5em + 2.5vw);
+    min-width: 150px;
+    color: white;
+    font-size: calc(0.5em + 0.5vw);
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-left: 1vw;
+    padding-right: 21%;
+}
+
+.align_sidebar_g p {
+    width: 100px;
+}
+
+.rainbow-text {
+    position: absolute;
+    width: 27vw;
+    min-width: 160px;
+    height: auto;
+    font-size: calc(1.5em + 1.5vw);
+    text-align: center;
+    padding-top: 0.3vw;
+    padding-bottom: 6px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 37vw;
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 7s ease infinite;
+    cursor: pointer;
+}
+
+@keyframes rainbow {                                        
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+}
+
+.align_sidebar_d {
+    float: right;
+    width: 14%;
+    height: 46px;
+    min-height: 20px;
+    color: white;
+    font-size: calc(0.8em + 0.8vw);
+    text-align: right;
+    padding-top: 1px;
+    padding-bottom: 1vw;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.boutonmenuprincipal {
+    float: right;
+    font-family: 'Poppins', sans-serif;
+    width: 13vw;
+    height: calc(2em + 1vw);
+    min-height: 45px;
+    background-color: #161616;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.8vw;
+    padding-top: 9.5px;
+    font-size: calc(0.8em + 0.8vw);
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+.boutonmenuprincipal:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+    transition-duration: 0.4s;  
+}
+
+.dropdown-child {
+    float: right;
+    width: 13vw;
+    margin-top: calc(28px + 3.53vw);
+    margin-left: 1%;
+    position: fixed;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    display: none;
+    border-bottom-left-radius: 20px 20px;
+    background: linear-gradient(#161616, #252525);
+    transition-duration: 0.4s;  
+}
+
+.dropdown-child a {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    padding: 1vw;
+    text-decoration: none;
+    display: block;
+    transition-duration: 0.4s;    
+}
+
+.finLien{
+    border-bottom-left-radius: 20px 20px;
+}
+
+.dropdown-child a:hover{
+    background-color: #161616;
+    color: white;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+
+#accueil{
+    height: 900px;
+    width: 100%;
+    margin-left: 0px;
+}
+
+h6{
+    color: transparent;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+}
+
+#prog_vid{
+    height: 36.5vw;
+    margin: 20vw;
+    margin-top:180px;
+    border-bottom-left-radius: 2vw 2vw;
+    border-bottom-right-radius: 2vw 2vw;
+    border-top-left-radius: 2vw 2vw;
+    border-top-right-radius: 2vw 2vw;
+}
+
+#hello_world {
+    position: relative;
+    height: 30vw;
+    width: 54vw;
+    margin-top: 15%;
+    margin-left: 23%;
+    animation-duration: 2s;
+    animation-name: hello_w;
+    border-bottom-left-radius: 5.2vw 5.2vw;
+    border-bottom-right-radius: 5.2vw 5.2vw;
+    border-top-left-radius: 5.2vw 5.2vw;
+    border-top-right-radius: 5.2vw 5.2vw;
+}
+
+#hello_w {animation-timing-function: ease;}
+
+@keyframes hello_w{
+    0%   {right: 800px;}
+    100% {right: 0px;}
+}
+
+.presentation {
+    float: right;
+    position: relative;
+    width: 49vw;
+    height: 38vw;
+    margin-top: 8vw;
+    margin-right: 23%;
+    background-color: #1a1a1a;
+    color: white;
+    border-top-right-radius: 3.1vw 3.1vw;
+    border-top-left-radius: 3.1vw 3.1vw;
+    border-bottom-left-radius: 3.1vw 3.1vw;
+    border-bottom-right-radius: 3.1vw 3.1vw;
+    animation-duration: 3.5s;
+    animation-name: present;
+    padding: 2.6vw;
+}
+
+#present {animation-timing-function: ease;}
+
+@keyframes present{
+    0%   {left: 1600px;}
+    100% {left: 0px;}
+}
+
+table{
+    width: 49vw;
+    height: 38vw;
+    margin-bottom: 100px;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 1.5vw;
+    text-align: center;
+    font-size: 2.8vw;
+    border: 2px solid white;
+}
+
+
+.CV{
+    position: absolute;
+    width: 52vw;
+    height: 69vw;
+    margin-left: 22%;
+    margin-top: 125px;
+    margin-bottom: 150px;
+    background-color: #1a1a1a;
+    color: white;
+    border-top-right-radius: 3.1vw 3.1vw;
+    border-top-left-radius: 3.1vw 3.1vw;
+    border-bottom-left-radius: 3.1vw 3.1vw;
+    border-bottom-right-radius: 3.1vw 3.1vw;
+    padding: 50px;
+}
+
+.contact{
+    float: none;
+    position: static;
+    width: 100%;
+    height: 350px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding-top: 300px;
+    font-size: 3vw;
+    color: white;
+}
+
+#mail{
+    font-size: 3vw;
+    color: white;
+}
+
+.photo{
+    position: absolute;
+    margin-top: 7.8vw;
+    width: 15vw;
+    height: 26.2vw;
+}
+
+.imgcar{
+    margin-top: 16vw;
+    height: 11.3vw;
+}
+
+.text_note{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 46%;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.img_musique{
+    position: absolute;
+    height: 34vw;
+    width: 34vw;
+    padding: 8vw;
+    padding-top: 150px;
+}
+
+.alb_img{
+    height: 100%;
+    width: 100%;
+}
+
+.listM{
+    height: 32vw;
+    width: 35vw;    
+    padding-top: 150px;
+    padding-bottom: 8vw;
+    padding-left: 8vw;
+    padding-right: 7vw;
+    margin-left: 50%;
+}
+
+.list{
+    height: 100%;
+    width: 100%;
+    padding: 1vw;
+    background-color: #1a1a1a;
+    color: white;
+    border-top-right-radius: 1vw 1vw;
+    border-top-left-radius: 1vw 1vw;
+    border-bottom-left-radius: 1vw 1vw;
+    border-bottom-right-radius: 1vw 1vw;
+}
+
+.list1{
+    margin: 0.5vw;
+    margin-top: 4vw;
+    margin-left: 2vw;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.list2{
+    margin: 0.5vw;
+    margin-top: 6vw;
+    margin-left: 2vw;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.list3{
+    margin: 0.5vw;
+    margin-top: 6vw;
+    margin-left: 2vw;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#switchM1{
+    display: block; 
+}
+
+#switchM2{  
+    display: none;
+}
+
+#switchM3{
+    display: none; 
+}
+
+.timeline{
+    position: fixed;
+    bottom: 0;
+    height: 110px;
+    width: 100%;
+    background-color: #1a1a1a;
+}
+
+audio {
+    background-color: transparent;
+    height: 54px;
+}

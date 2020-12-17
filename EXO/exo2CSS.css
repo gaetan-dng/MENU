@@ -1,0 +1,36 @@
+#globale{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bandeau{
+    background-color: #0026ff;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu{
+    float: left;
+    margin-right: 0px;
+    background-color: #ff00ea;
+    height: 200px;
+    width: 30px;
+    text-align: center;
+}
+
+.contenu{
+    margin-left: auto;
+    background-color: #fffb00;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.pdp{
+    margin-block: 1px;
+    background-color: #00ff37;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+}

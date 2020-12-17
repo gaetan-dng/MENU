@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Page.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">               <!--Import de la police du site-->
+        <link rel="icon" type="image/png" href="logo-website.png" />                                                        <!--icon de longlet-->
+        <title>Page de présentation</title>
+    </head>
+    
+    <body>
+        <div class="scrolling-box">                                                                                         <!--Creation de la div scrolling-box-->
+            <audio id="myAudio">
+                <source src="musique/machine_Gun_Kelly_Candy_feat_Trippie_Redd.mp3" type="audio/mpeg">
+            </audio>
+            <div id="sidebar" class="sidebar_li">
+                <div class="align_sidebar_g">
+                    <p>
+                        Gaëtan 
+                        Deneufgermain
+                    </p>
+                </div>
+            <div class="rainbow-text" onclick="playAudio()" >BTS SN 1</div>                                                 <!--mise en place de l'audio-->
+            <div class="align_sidebar_d">
+                    <div class="dropdown">
+                        <button class="boutonmenuprincipal">Menu</button>
+                            <div class="dropdown-child">                                                                    <!--liens-->
+                            <a href="Page_accueilF.html">Accueil</a>
+                                <a href="Page_présentationF.html">Présentation</a>
+                                <a href="Page_CVF.html">CV</a>
+                                <a href="Page_contactF.html">contact</a>
+                                <a href="Page_voitureF.html">voiture</a>
+                                <a href="Page_nouvelle_techF.html">nouvelle tech</a>
+                                <a href="Page_mecaniqueF.html">mecanique</a>
+                                <a class="finLien" href="Page_musiqueF.html">Musique</a>
+                            </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+            <div id="videoD">
+                <video id="hello_world"
+                    src="video/Hello_World.mp4"
+                    autoplay loop="" muted="">         
+                </video>
+
+                    <div class="presentation">                                                                              <!--div qui accueil le tableau-->
+                        <table>   
+                            <tr>
+                                <td class="hg">Nom</td>
+                                <td class="hd">Deneufgermain</td>
+                            </tr>
+                            <tr>
+                                <td>Prenom</td>
+                                <td>Gaëtan</td>
+                            </tr>
+                            <tr>
+                                <td>Age</td>
+                                <td>18 ans</td>
+                            </tr>
+                            <tr>
+                                <td class="bg">Statut</td>
+                                <td class="bd">Etudiant</td>
+                            </tr>
+                        </table> 
+                    </div>  
+
+                </div>
+                                                                                                                            <!--volume audio-->
+        <script>
+            var x = document.getElementById("myAudio"); 
+            x.volume=0.1;
+            function playAudio() { 
+            x.play(); 
+            } 
+        </script>
+
+    </body>
+</html>

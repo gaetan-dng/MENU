@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Page.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">               <!--Import de la police du site-->
+        <link rel="icon" type="image/png" href="logo-website.png" />                                                        <!--icon de longlet-->
+        <title>Page musique</title>
+    </head>
+
+    <body>
+        <div class="scrolling-box">                                                                                         <!--Creation de la div scrolling-box-->
+            <audio id="myAudio">
+                <source src="musique/machine_Gun_Kelly_Candy_feat_Trippie_Redd.mp3" type="audio/mpeg">
+            </audio>
+            <div id="sidebar" class="sidebar_li">
+                <div class="align_sidebar_g">
+                    <p>
+                        Gaëtan 
+                        Deneufgermain
+                    </p>
+                </div>
+            <div class="rainbow-text" onclick="playAudio()" >BTS SN 1</div>                                                 <!--mise en place de l'audio-->
+            <div class="align_sidebar_d">
+                    <div class="dropdown">
+                        <button class="boutonmenuprincipal">Menu</button>
+                            <div class="dropdown-child">                                                                    <!--liens-->
+                                <a href="Page_accueilF.html">Accueil</a>
+                                <a href="Page_présentationF.html">Présentation</a>
+                                <a href="Page_CVF.html">CV</a>
+                                <a href="Page_contactF.html">contact</a>
+                                <a href="Page_voitureF.html">voiture</a>
+                                <a href="Page_nouvelle_techF.html">nouvelle tech</a>
+                                <a href="Page_mecaniqueF.html">mecanique</a>
+                                <a class="finLien" href="Page_musiqueF.html">Musique</a>
+                            </div>
+                    </div>
+                </div>  
+            </div>
+        </div>            
+
+        <div class="img_musique">                                                                                           <!--image des musiques-->
+            <img class="alb_img" id="switchM1img" src="musique/img_candy.jpg" alt="jpg">
+            <img class="alb_img" id="switchM2" src="musique/img_molly.jpg" alt="jpg">
+            <img class="alb_img" id="switchM3" src="musique/img_perle_rare.jpg" alt="jpg">
+        </div>
+        <div class="listM">                                                                                                 <!--list des 3 musique-->
+            <div class="list">
+                <button class="list1" onclick="switchS1()" style="width: 28vw; padding: 0.4vw; font-size: 1vw; margin-left: 20px; list-style:none;">
+                    <img class="candy_img" src="musique/img_candy.jpg" alt="jpg" style="float: left; height: 2.6vw; width: 2.6vw;">
+                    
+                        Candy - Machine Gun Kelly feat Trippie Redd
+                    
+                </button>
+                <button class="list2" onclick="switchS2()" style="width: 28vw; padding: 0.4vw;  font-size: 1vw; list-style:none;">
+                    <img class="candy_img" src="musique/img_molly.jpg" alt="jpg" style="float: left; height: 2.6vw; width: 2.6vw;">
+                    
+                        Molly - Iann Dior
+
+                </button>
+                <button class="list3" onclick="switchS3()" style="width: 28vw; padding: 0.4vw;  font-size: 1vw;">
+                    <img class="candy_img" src="musique/img_perle_rare.jpg" alt="jpg" style="float: left; height: 2.6vw; width: 2.6vw;">
+                   
+                        Perle Rare - Pxreslow
+                    
+                </button>
+            </div>
+        </div>    
+        
+        <div class="timeline">
+            <div id="switchM1">
+                <audio controls preload="auto" id="timeM" src="musique/machine_Gun_Kelly_Candy_feat_Trippie_Redd.mp3" style="width: 95vw; margin-left: 4vw; margin: 2.5vw; margin-top: 1.3vw;"></audio>
+            </div>
+            
+        </div>
+                                                                                                                            <!--script pour gerer le volume-->
+        <script>                                                                                                            
+            var x = document.getElementById("myAudio"); 
+            x.volume=0.1;
+            function playAudio() { 
+            x.play(); 
+            } 
+
+            var music = document.setElem                                                                                    //initialisation des variables
+            var son1 = document.getElementById("switchM1img");
+            var son2 = document.getElementById("switchM2");
+            var son3 = document.getElementById("switchM3");
+
+            function switchS1() {                                                                                           //function pour changer de musique
+
+                document.getElementById("timeM").src = "musique/machine_Gun_Kelly_Candy_feat_Trippie_Redd.mp3";
+                son1.style.display = "block";
+                son2.style.display = "none";
+                son3.style.display = "none";
+                 
+            }
+            
+            function switchS2() {                                                                                           //function pour changer de musique
+
+                document.getElementById("timeM").src = "musique/molly_iann_dior.mp3";
+                son1.style.display = "none";
+                son2.style.display = "block";
+                son3.style.display = "none";
+                 
+            }
+                
+            function switchS3() {                                                                                           //function pour changer de musique
+
+                document.getElementById("timeM").src = "musique/Perle_Rare_pxrselow.mp3";
+                son1.style.display = "none";
+                son2.style.display = "none";
+                son3.style.display = "block";
+
+            }
+                
+        </script>
+    </body>
+</html>

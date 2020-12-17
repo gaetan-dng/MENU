@@ -1,0 +1,69 @@
+form{
+    padding: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    margin-right: 50px;
+    text-align: right;
+}
+
+input[type="text"]{
+    width: 100px;
+}
+
+input[type="number"]{
+    width: 100px;
+}
+
+.div1{
+    display: block;
+}
+
+.div2{
+    display: block;
+    margin-top: 1em;
+}
+
+.div3{
+    display: block;
+    margin-top: 1em;
+}
+
+.div4{
+    display: block;
+    margin-top: 1em;
+}
+
+.div5{
+    padding-left: 100px;
+    display: block;
+    margin-top: 1em;
+}
+
+.div6{
+    display: block;
+    margin-top: 1em;
+}
+
+.div7{
+    padding-left: 125px;
+    display: block;
+    margin-top: 1em;
+}
+
+.div8{
+    display: block;
+    margin-top: 1em;
+}
+
+.div9{
+    display: block;
+    margin-top: 1em;
+}
+
+.div10{
+    display: block;
+    margin-top: 1em;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Roadster_page/page.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">                                   <!--import police d'ecriture-->
+        <link rel="icon" type="image/png" href="logo-website.png" />                                                                            <!--icon de longlet-->
+        <title>Page voiture</title>
+    </head>
+
+    <body>
+            <div id="sidebar" class="sidebar_li">
+                <img src="Roadster_page/img_vid/tesla-logo.png" class="logoT" alt="tesla roadster">                                                 <!--video-->
+                <div class="align_sidebar_d">
+                    <div class="dropdown">
+                        <button class="boutonmenuprincipal">Menu</button>
+                            <div class="dropdown-child">                                                                    <!--liens-->
+                                <a href="Page_accueilF.html">Accueil</a>
+                                <a href="Page_présentationF.html">Présentation</a>
+                                <a href="Page_CVF.html">CV</a>
+                                <a href="Page_contactF.html">contact</a>
+                                <a href="Page_voitureF.html">voiture</a>
+                                <a href="Page_nouvelle_techF.html">nouvelle tech</a>
+                                <a href="Page_mecaniqueF.html">mecanique</a>
+                                <a class="finLien" href="Page_musiqueF.html">Musique</a>
+                            </div>
+                    </div>
+                </div>  
+            </div>
+
+        <div class="video"></div>
+                                                                                                                                                <!--lien video-->
+            <video id="video_roadster"                                                                                                              
+            src="https://www.tesla.com/ns_videos/roadster_videos/roadster-fr_FR.mp4?20180329"
+            loop="" muted="">
+            </video>
+                                                                                                                                                <!--volume audio-->
+            <script>
+                setTimeout(function(){
+                  document.getElementById("video_roadster").play();
+                }, 1050)
+
+
+//                $(function() {                                                                                                                  //animation
+//
+//                var $sidebar   = $("#sidebar"), 
+//                    $window    = $(window),
+//                    offset     = $sidebar.offset(),
+//                    topPadding = 15;
+//
+//                $window.scroll(function() {
+//                    if ($window.scrollTop() > offset.top) {
+//                        $sidebar.stop().animate({
+//                            marginTop: $window.scrollTop() - offset.top + topPadding
+//                        });
+//                    } else {
+//                        $sidebar.stop().animate({
+//                            marginTop: 0
+//                        });
+//                    }
+//                });
+//
+//                });
+            </script>
+        
+        <div class="main">
+            <div class="descriptif">                                                                                                            <!--tableau-->
+                <ul>
+                    <li>
+                        <div>Spécifications de base</div>
+                    </li>
+                    <li>
+                        <hr class="op2">
+                    </li>
+                    <li>   
+                        <div class="op1"></div>
+                    </li>
+                    <li>
+                        <div class="dtab">Accélération 0-100 km/h</div>
+                        <div class="gtab">2,1 s</div>
+                    </li>
+                    <li>   
+                        <hr class="op2">
+                    </li>
+                    <li>
+                        <div class="dtab">400 mètres départ-arrêté</div>
+                        <div class="gtab">8,8 s</div>
+                    </li>
+                    <li>   
+                        <hr class="op2">
+                    </li>
+                    <li>
+                        <div class="dtab">Vitesse maximale</div>
+                        <div class="gtab">Plus de 400 km/h</div>
+                    </li>
+                    <li>   
+                        <hr class="op2">
+                    </li>
+                    <li>
+                        <div class="dtab">Couple aux roues</div>
+                        <div class="gtab">10 000 Nm</div>
+                    </li>
+                    <li>   
+                        <hr class="op2">
+                    </li>
+                    <li>
+                        <div class="dtab">Autonomie</div>
+                        <div class="gtab">1 000 kilomètres</div>
+                    </li>
+                    <li>   
+                        <hr class="op2">
+                    </li>
+                    <li>
+                        <div class="dtab">Places</div>
+                        <div class="gtab">4</div>
+                    </li>
+                    <li>   
+                        <hr class="op2">
+                    </li>
+                    <li>
+                        <div class="dtab">Transmission</div>
+                        <div class="gtab">Transmission Intégrale</div>
+                    </li>
+                    <li>   
+                        <hr class="op2">
+                    </li>
+                    <li>
+                        <div class="dtab" style="margin-bottom: 1vw;">Acompte de réservation</div>
+                        <div class="gtab" style="margin-bottom: 1vw;">43 000 €</div>
+                    </li>
+                    <li>   
+                        <hr class="op2">
+                    </li>
+                    <li>
+                        <div class="dtabf" style="margin-top: 0.6vw;">Réservation de la Founders Series</div>
+                        <div class="gtab">215 000 €</div>
+                        <div class="dtabf" style="font-size: 0.6vw;">(1 000 modèles disponibles à la réservation)</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

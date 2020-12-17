@@ -1,0 +1,255 @@
+html {
+    scroll-behavior: smooth;                                /*animation scroll*/
+    scrollbar-width: none;
+}
+
+body{
+    background-color: #202020;
+    margin: 0px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+@font-face {
+    font-family: 'Poppins', sans-serif;   
+}
+
+.element::-webkit-scrollbar { width: 0 }
+
+.scrolling-box {
+    display: block;
+    text-align: center;
+}
+
+#sidebar {
+    z-index: 5;
+    background-color: #161616;
+    height: auto;
+    width: 100%;
+    max-height: 160px;
+    min-height: 47px;
+}
+
+.sidebar_li{                                                /*appelle de la class sidebar_li*/
+    position: absolute;
+    margin-right: 0px;
+    list-style-type: none;
+}
+  
+.logoT{
+    height: 1.9vw;
+    width: 14.7vw;
+    margin: 1vw;
+    margin-top: 1.7vw;
+    margin-bottom: 1.7vw;
+    margin-left: 42%;
+}
+
+.align_sidebar_d {
+    float: right;
+    width: 14%;
+    height: 46px;
+    min-height: 20px;
+    color: white;
+    font-size: calc(0.8em + 0.8vw);
+    text-align: right;
+    padding-top: 1px;
+    padding-bottom: 1vw;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.boutonmenuprincipal {
+    float: right;
+    font-family: 'Poppins', sans-serif;
+    width: 13vw;
+    height: calc(2em + 1vw);
+    min-height: 45px;
+    background-color: #161616;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.8vw;
+    padding-top: 9.5px;
+    font-size: calc(0.8em + 0.8vw);
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+.boutonmenuprincipal:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+    transition-duration: 0.4s;  
+}
+
+.dropdown-child {
+    float: right;
+    width: 13vw;
+    margin-top: calc(28px + 3.55vw);
+    margin-left: 1%;
+    position: fixed;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    display: none;
+    border-bottom-left-radius: 20px 20px;
+    background: linear-gradient(#161616, #252525);
+    transition-duration: 0.4s;  
+}
+
+.dropdown-child a {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    padding: 1vw;
+    text-decoration: none;
+    display: block;
+    transition-duration: 0.4s;    
+}
+
+.finLien{
+    border-bottom-left-radius: 20px 20px;
+}
+
+.dropdown-child a:hover{
+    background-color: #161616;
+    color: white;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+
+.textS:hover{
+    transition: 1s;
+    background: white;
+}
+
+#title-area { 
+    background: white; 
+    position: relative; 
+    z-index: 3000; 
+}
+  
+  
+#reveal { 
+    position: absolute; 
+    right: 0; 
+    bottom: -1vw; 
+}
+
+li{
+    list-style-type: none;  
+}
+
+#video_roadster{ 
+    height: 28.1vw; 
+    width: 100vw;
+    border-bottom-left-radius: 26vw 2.6vw;
+    border-bottom-right-radius: 26vw 2.6vw;
+}
+
+.video{
+    background-color: #202020;
+    object-fit: contain;
+    position: absolute;
+    animation-duration: 10s;
+}
+
+.main{
+    background-color: #202020;
+    height: 21vw;
+    width: 100%;
+    border-radius: -2.6vw;
+}
+
+.descriptif{
+    background-color: #1a1a1a;
+    height: 30vw;
+    width: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10.4vw;
+    margin-bottom: 2vw;
+    position: relative;
+    animation-duration: 2.5s;
+    animation-name: descriptif;
+    border-bottom-left-radius: 1.3vw 1.3vw;
+    border-bottom-right-radius: 1.3vw 1.3vw;
+    border-top-left-radius: 1.3vw 1.3vw;
+    border-top-right-radius: 1.3vw 1.3vw;
+
+    padding-top: 5.2vw;
+    padding-bottom: 8.3vw;
+    padding-left: 6.2vw;
+    padding-right: 6.2vw;
+    color: white;
+    text-align: left;
+    font-size: 1.5vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.op1{
+    margin-top: 0.5vw;
+    margin-bottom: 0px;
+}
+
+.op2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+#descriptif {animation-timing-function: ease;}
+
+@keyframes descriptif{
+    0%   {top: 300px;}
+    100% {top: 0px;}
+}
+
+.dtab{
+    width: 50%;
+    margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
+    text-align: left;
+    float: left;
+    font-size: 1vw;
+}
+
+.dtabf{
+    width: 50%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    float: left;
+    font-size: 1vw;
+}
+
+
+.gtab{
+    width: 50%;
+    margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
+    text-align: right;
+    float: right;
+    font-size: 1vw;
+}

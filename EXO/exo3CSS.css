@@ -1,0 +1,47 @@
+#globale{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bandeau{
+    background-color: #0026ff;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.menuh{
+    float: left;
+    margin-right: 0px;
+    background-color: #00ff0d;
+    height: 100px;
+    width: 30px;
+    text-align: center;
+}
+
+.menub{
+    float: left;
+    margin-top: 100px;
+    position: absolute;
+    margin-right: 0px;
+    background-color: #a200ff;
+    height: 100px;
+    width: 30px;
+    text-align: center;
+}
+
+.contenu{
+    margin-left: auto;
+    background-color: #fffb00;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.pdp{
+    margin-block: 1px;
+    background-color: #00ff88;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+}
